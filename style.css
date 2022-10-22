@@ -192,4 +192,41 @@ button {
 .circleImages {
     border: 2px solid black;
     height:100vh;
+    overflow:hidden;
+}
+
+.leftAndRightSecond {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    height:100%;
+}
+
+
+.secondParagraphContainer {
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:3rem;
+    padding-top:12rem;
+    
+}
+
+.secondParagraphContainer > p {
+    width:75%;
+    font-size:20px;
+    font-weight:500;
+    padding-left:5rem;
+    line-height:1.5;
+
+}
+
+
+
+.rightSideSecondSection > img {
+    padding:3rem;
+}
+#second {
+    width:90%;
+    padding-left:10rem;
 }
