@@ -8,7 +8,7 @@
 
 body {
     background-image:repeating-linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);    
-    height:300vh;
+    height:400vh;
     width:100vw;
     background-size: 100vw;
     background-position:cover;
@@ -252,4 +252,28 @@ button {
     .secondParagraphContainer > p {
         display:none;
     }
+    .galleryContainer > img {
+        align-self:flex-start
+    }
+}
+
+.galleryContainer {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:80vh;
+}
+
+.galleryContainer > img {
+    width:80vw;
+}
+
+.gallery {
+    text-align:center;
+}
+
+.gallery > h2 {
+    padding-top:3rem;
+    padding-bottom:1rem;
+    font-size:3vw;
 }
