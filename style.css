@@ -187,3 +187,9 @@ button {
         
     }
 }
+
+
+.circleImages {
+    border: 2px solid black;
+    height:100vh;
+}
