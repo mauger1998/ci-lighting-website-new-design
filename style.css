@@ -221,6 +221,10 @@ button {
     line-height:1.5;
 
 }
+#bannerOne,
+    #bannerTwo {
+        width:100vw;
+    }
 
 
 
@@ -233,7 +237,8 @@ button {
 }
 
 @media(max-width:850px) {
-    #bannerOne {
+    #bannerOne,
+    #bannerTwo {
         width:100vw;
     }
     .leftAndRightSecond {
