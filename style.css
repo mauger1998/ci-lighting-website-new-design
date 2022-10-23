@@ -379,19 +379,22 @@ button:hover {
     color:white;
     display:flex;
     border-radius:1rem;
-    background-image:url(figma-images/landscape-nature-rock-person-light-sky-855683-pxhere.com.jpg);
+    background-image:url(figma-images/sky-night-atmosphere-environment-space-globe-825765-pxhere.com.jpg);
     background-size:cover;
-    background-position:0.1rem;
+    background-position:top;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-items:center;
-    justify-content: space-evenly;
+    gap:1rem;
     outline:none;
     border:none;
     transition:0.5s;
     width:15vw;
     height:52vh;
     grid-column:3;
-    grid-row: 1 / span 2
+    grid-row: 1 / span 2;
+    flex-direction: column;
+
+
 
 
 }
@@ -400,8 +403,10 @@ button:hover {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    padding-right:1.5rem;
-    gap:1rem;
+    align-items:center;
+    
+    gap:3rem;
+    width:90%;
 }
 
 #cardThreeButton {
@@ -414,7 +419,17 @@ button:hover {
     
 
 }
-
+/* Hover */
+.productCardOne:hover,
+.productCardTwo:hover,
+.productCardThree:hover {
+    transform: scale(1.1);
+}
+.productCardOne,
+.productCardTwo,
+.productCardThree {
+    transition:transform 0.5s;
+}
 
 
 
