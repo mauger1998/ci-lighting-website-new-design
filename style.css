@@ -291,190 +291,130 @@ button:hover {
 }
 
 
+/* Card One */
 
-
-.productCardOne,
-.productCardTwo {
+.productCardOne
+ {
     color:white;
-    background-color:white;
     display:flex;
     border-radius:1rem;
     background-image:url(figma-images/pexels-igor-cibulsky-8585557.jpg);
     background-size:cover;
     background-position:0.1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items:center;
+    justify-content: space-evenly;
     outline:none;
     border:none;
     transition:0.5s;
+    width:31vw;
+    height:25vh;
 
 }
-.productCardOne > img,
-.productCardTwo > img {
-    padding:2rem;
-    padding-left:3rem;
-    padding-right:3rem;
-}
+
 .titleContainer {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    padding:1rem;
-    gap:1rem;
-    padding-right:4rem;
+    gap: 1rem;
 }
 
-.productCardOne:hover,
-.productCardTwo:hover {
-    cursor:pointer;
-    /*transform: scale(1.2);
-    transition: 0.5s;*/
-}
-
-.productCardOne {
-    position:absolute;
-}
-.productCardTwo {
-    position:relative;
-    top:0;
-    background-image:none;
-    background-color:black;
-    opacity:0.5;
-    transition: all 0.5s;
-    z-index:10000;
-}
-.productCardTwo > .titleContainer > h2 {
-    visibility:hidden;
-}
-.productCardTwo > .titleContainer > h3 {
-    visibility:hidden;
-}
-.productCardTwo > img {
-    visibility: hidden;
-}
-.productCardTwo > .titleContainer > p {
-    font-size:40px;
-    color:red;
-    opacity:1;
-}
-
-
-.productCardTwo:hover {
-    animation: slide-out 1.2s forwards;
-    transition: all 0.5s ease;
-    
-    
-}
-.productCardOne > .titleContainer > button {
+#cardOneButton {
+    padding:0.5rem 1.5rem;
+    width:max-content;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-self:center;
-    visibility:hidden;
-    transition: all 0.5s;
+    margin-right:0.5em;
+    
+
 }
-.productCardOne > .titleContainer > button:hover {
-    transition: all 0.5s;
-    visibility: visible;
+/* Card Two */
+.productCardTwo
+ {
+    color:white;
+    display:flex;
+    border-radius:1rem;
+    background-image:url(figma-images/landscape-nature-rock-person-light-sky-855683-pxhere.com.jpg);
+    background-size:cover;
+    background-position:0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items:center;
+    justify-content: space-evenly;
+    outline:none;
+    border:none;
+    transition:0.5s;
+    width:31vw;
+    height:25vh;
+    grid-row: 2/ span 2
+}
+
+.titleContainerTwo {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-right:1.5rem;
+    gap:1rem;
+}
+
+#cardTwoButton {
+    padding:0.5rem 1.5rem;
+    width:max-content;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-self:center;
+    margin-right:0.5em;
+    
 
 }
 
-@keyframes slide-out {
-    0% {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        transition: all 0.5s;
-        
-
-    }
-    100% {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-        transition: all 0.5s;
-        display:none;
-        
-    }
-}
 .productGridContainer {
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   gap:1em;
+    display:grid;
+    grid-template-columns:15.5vw 15.5vw 15.5vw;
+    gap:1rem;
 }
-.productCardThree,
-.productCardFour {
+/* Card Three */
+.productCardThree
+ {
     color:white;
-    background-color:white;
     display:flex;
     border-radius:1rem;
-    background-image:url(figma-images/pexels-igor-cibulsky-8585557.jpg);
+    background-image:url(figma-images/landscape-nature-rock-person-light-sky-855683-pxhere.com.jpg);
     background-size:cover;
     background-position:0.1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items:center;
+    justify-content: space-evenly;
     outline:none;
     border:none;
     transition:0.5s;
+    width:15vw;
+    height:52vh;
+    grid-column:3;
+    grid-row: 1 / span 2
+
 
 }
-.productCardThree > img,
-.productCardFour > img {
-    padding:2rem;
-    padding-left:3rem;
-    padding-right:3rem;
-}
-.titleContainer {
+
+.titleContainerThree {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    padding:1rem;
+    padding-right:1.5rem;
     gap:1rem;
-    padding-right:4rem;
 }
 
-.productCardThree:hover,
-.productCardFour:hover {
-    cursor:pointer;
-    /*transform: scale(1.2);
-    transition: 0.5s;*/
-}
-
-.productCardThree {
-    position:absolute;
-    
-}
-.productCardFour {
-    position:relative;
-    top:0;
-    background-image:none;
-    background-color:black;
-    opacity:0.5;
-    transition: all 0.5s;
-}
-.productCardFour > .titleContainer > h2 {
-    visibility:hidden;
-}
-.productCardFour > .titleContainer > h3 {
-    visibility:hidden;
-}
-.productCardFour > img {
-    visibility: hidden;
-}
-.productCardFour > .titleContainer > p {
-    font-size:40px;
-    color:red;
-    opacity:1;
-}
-
-
-.productCardFour:hover {
-    animation: slide-out 1.2s forwards;
-    transition: all 0.5s ease;
-    
-    
-}
-.productCardThree > .titleContainer > button {
+#cardThreeButton {
+    padding:0.5rem 1.5rem;
+    width:max-content;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-self:center;
-    visibility:hidden;
-    transition: all 0.5s;
-}
-.productCardThree > .titleContainer > button:hover {
-    transition: all 0.5s;
-    visibility: visible;
+    margin-right:0.5em;
+    
 
 }
+
 
 
 
