@@ -12,6 +12,9 @@ body {
     width:100vw;
     background-size: 100vw;
     background-position:cover;
+    display:flex;
+    flex-direction: column;
+    height:max-content;
     
 }
 
@@ -433,3 +436,39 @@ button:hover {
 
 
 
+#seeMore {
+    font-size:2rem;
+}
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height:50vh;
+    z-index:100000;
+    display:flex;
+    padding:1rem;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+.socialMediaLinks > .iconContainerFooter > img {
+    width:50px;
+    
+}
+.socialMediaLinks {
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    justify-content: center;
+    align-items: center;
+}
+.iconContainerFooter {
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3 {
+    font-weight:400;
+    width:max-content;
+}
