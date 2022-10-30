@@ -497,10 +497,10 @@ button:hover {
     height:max-content;
 }
 .image {
-    width:400px;
+    width:1000px;
 }
 .imageTrackContainer {
-    width:400px;
+    width:1000px;
     overflow:hidden;
 
 }
@@ -539,4 +539,7 @@ button:hover {
 .navButton.currentSlide {
     background-color:rgba(0, 0, 0, 0.7);
 }
-
+.galleryContainer {
+    display:flex;
+    flex-direction: column;
+}
