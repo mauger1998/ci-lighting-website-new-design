@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
 </head>
 <body>
   <header class="navBarMainBody">
@@ -58,16 +59,54 @@
       </div>
     </div>
   </section>
+
+
+
+
   <section class="gallery">
     <img id="bannerTwo" src="figma-images/Rectangle 16.png" alt="Animated lightning storm">
     <h2>Check out some of our Products</h2>
     <div class="galleryContainer">
-      <img src="figma-images/Group 11.png" alt="Take a look at our products">
+      <div class="carousel">
+        <button class="prevButton">b</button>
+        <div class="imageTrackContainer">
+            <ul class="imageTrack">
+                <li class="currentSlide li">
+                    <img class="image" src="figma-images/SlideOne.png" alt="First Slide">
+                </li>
+                <li class="li">
+                    <img class="image" src="figma-images/SlideTwo.png" alt="Second Slide">
+                </li>
+                <li class="li">
+                    <img class="image" src="figma-images/SlideThree.png" alt="Third Slide">
+                </li>
+            </ul>
+
+        </div>
+        <button class="nextButton">f</button>
+    </div>
+    <div class="navContainer">
+        <button class="navButton currentSlide"></button>
+        <button class="navButton"></button>
+        <button class="navButton"></button>
+    </div>
     </div>
   </section>
 
+
+
+
+
 <section class="gridSection"> 
     <h2 id="seeMore">See More On Our Product Page or Click on a Brand To Filter</h2>
+    <form>
+      <label for="brandSelect">Filter Brands</label>
+      <select id="select" name="brandSelect">
+        <option value="robus">Robus</option>
+        <option value="aurora">Aurora</option>
+        <option value="hydra">Hydra</option>
+      </select>
+    </form>
 
     <div class="productGridContainer">
       

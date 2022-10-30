@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior:smooth ;
 
 }
 
@@ -484,3 +485,58 @@ button:hover {
     height:100vh;
     gap:2rem;
 }
+.productGridContainer {
+    text-align:center;
+}
+
+/*Image Gallery */
+.carousel {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:max-content;
+}
+.image {
+    width:400px;
+}
+.imageTrackContainer {
+    width:400px;
+    overflow:hidden;
+
+}
+.imageTrack {
+    width:max-content;
+    display:flex;
+    list-style:none;
+    transition: transform 250ms ease-in;
+}
+.prevButton,
+.nextButton {
+    font-size:3rem;
+    font-weight:900;
+    border:none;
+    background-color:transparent;
+    margin:1em;
+    color:black;
+    z-index: 10000;
+}
+.navButton {
+    height:20px;
+    width:20px;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius:50%;
+    border: none;
+    outline:none;
+    margin:0.5em;
+    cursor:pointer;
+}
+.navContainer {
+    display:flex;
+    gap:1em;
+   
+    
+}
+.navButton.currentSlide {
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
