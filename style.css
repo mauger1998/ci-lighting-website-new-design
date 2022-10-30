@@ -503,7 +503,7 @@ button:hover {
 .imageTrackContainer {
     width:1000px;
     overflow:hidden;
-    rotate:-0.1deg
+    /* rotate:-0.1deg */
 
 }
 .imageTrack {
@@ -511,7 +511,7 @@ button:hover {
     display:flex;
     list-style:none;
     transition: transform 250ms ease-in;
-    rotate:-0.1deg
+    /* rotate:-0.1deg */
     
     
     
