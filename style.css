@@ -27,6 +27,7 @@ body {
     align-items: center;
     padding-left:10vw;
     width:100%;
+    position:fixed;
     
 }
 
