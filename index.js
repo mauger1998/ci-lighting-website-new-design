@@ -1,3 +1,5 @@
+// Image Slider Logic
+
 const track = document.querySelector(".imageTrack")
 const slides = document.querySelectorAll(".li")
 const imageList = document.querySelectorAll(".image")
@@ -7,9 +9,6 @@ const slidesArray = Array.from(slides)
 const navButtons = document.querySelectorAll(".navButton")
 const navButtonsArray = Array.from(navButtons)
 
-
-
-const slideWidth = 400
 
 
 nextButton.addEventListener("click", (e) => {

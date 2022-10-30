@@ -15,6 +15,7 @@ body {
     display:flex;
     flex-direction: column;
     height:max-content;
+    background-attachment: fixed;
     
 }
 
@@ -23,10 +24,8 @@ body {
     height:14vh;
     display:flex;
     justify-content: space-between;
-    
     align-items: center;
     padding-left:10vw;
-    position:fixed;
     width:100%;
     
 }
@@ -51,6 +50,7 @@ body {
 main {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    
     
 
     
@@ -94,7 +94,7 @@ h1 {
     display:flex;
     gap:1.5rem;
 }
-button {
+.button {
     width:150px;
     padding-top: 0.5rem;
     padding-bottom:0.5rem;
@@ -195,7 +195,7 @@ button {
     }
 }
 section.circleImages {
-    height:80vh;
+    height:90vh;
 }
 
 
@@ -270,7 +270,7 @@ section.circleImages {
     display:flex;
     align-items:center;
     justify-content: center;
-    height:50vh;
+    height:60vh;
 }
 
 .galleryContainer > img {
@@ -502,6 +502,7 @@ button:hover {
 .imageTrackContainer {
     width:1000px;
     overflow:hidden;
+    rotate:-0.1deg
 
 }
 .imageTrack {
@@ -509,6 +510,10 @@ button:hover {
     display:flex;
     list-style:none;
     transition: transform 250ms ease-in;
+    rotate:-0.1deg
+    
+    
+    
 }
 .prevButton,
 .nextButton {
@@ -519,6 +524,18 @@ button:hover {
     margin:1em;
     color:black;
     z-index: 10000;
+    
+    
+    
+    
+}
+.prevButton > img,
+.nextButton > img {
+    width:25px;
+}
+.prevButton:hover,
+.nextButton:hover {
+    background-color:transparent;
 }
 .navButton {
     height:20px;
